@@ -116,6 +116,20 @@
   button:hover {
     background-color: #0056b3;
   }
+  input, select {
+    font-size: 12px;
+    padding: 6px;
+    min-width: 60px;
+  }
+  
+  th, td {
+    font-size: 12px;
+    padding: 4px;
+  }
+  
+  table {
+    table-layout: auto;
+  }
 
   </style>
 </head>
@@ -151,15 +165,15 @@
       <tbody>
         <tr>
           <td>1</td>
-          <td><input type="date"></td>
+          <td><input type="text"></td>
           <td><input type="number" class="lateArrival" onchange="updateTotals(this)"></td>
-          <td><input type="date"></td>
+          <td><input type="text"></td>
           <td><input type="number" class="dayOff" onchange="updateTotals(this)"></td>
-          <td><input type="date"></td>
+          <td><input type="text"></td>
           <td><input type="number" class="leave" onchange="updateTotals(this)"></td>
-          <td><input type="date"></td>
+          <td><input type="text"></td>
           <td><input type="number" class="overtime" onchange="updateTotals(this)"></td>
-          <td><input type="date"></td>
+          <td><input type="text"></td>
           <td><input type="number" class="cashbon" onchange="updateTotals(this)"></td>
         </tr>
       </tbody>
@@ -227,15 +241,15 @@ function addRow(button) {
 
   newRow.innerHTML = `
     <td>${rowCount}</td>
-    <td><input type="date"></td>
+    <td><input type="text"></td>
     <td><input type="number" class="lateArrival" onchange="updateTotals(this)"></td>
-    <td><input type="date"></td>
+    <td><input type="text"></td>
     <td><input type="number" class="dayOff" onchange="updateTotals(this)"></td>
-    <td><input type="date"></td>
+    <td><input type="text"></td>
     <td><input type="number" class="leave" onchange="updateTotals(this)"></td>
-    <td><input type="date"></td>
+    <td><input type="text"></td>
     <td><input type="number" class="overtime" onchange="updateTotals(this)"></td>
-    <td><input type="date"></td>
+    <td><input type="text"></td>
     <td><input type="number" class="cashbon" onchange="updateTotals(this)"></td>
   `;
 }
@@ -273,15 +287,15 @@ function addForm() {
         <tbody>
           <tr>
             <td>1</td>
-            <td><input type="date"></td>
+            <td><input type="text"></td>
             <td><input type="number" class="lateArrival" onchange="updateTotals(this)"></td>
-            <td><input type="date"></td>
+            <td><input type="text"></td>
             <td><input type="number" class="dayOff" onchange="updateTotals(this)"></td>
-            <td><input type="date"></td>
+            <td><input type="text"></td>
             <td><input type="number" class="leave" onchange="updateTotals(this)"></td>
-            <td><input type="date"></td>
+            <td><input type="text"></td>
             <td><input type="number" class="overtime" onchange="updateTotals(this)"></td>
-            <td><input type="date"></td>
+            <td><input type="text"></td>
             <td><input type="number" class="cashbon" onchange="updateTotals(this)"></td>
           </tr>
         </tbody>
